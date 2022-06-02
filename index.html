@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/icons8-g-26.png">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script async src="https://api.countapi.xyz/hit/guladimeskhi.com/17a6ffe8-2a3c-4113-9da2-6b66d736b7d9?callback=visitsCount"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Guladi Meskhi</title>
+</head>
+<body>
+    <div class="primary-navbar flex container j-between">
+        <img src="./images/Web developer.svg" alt="" class="logo">
+        <nav class="primary-navbar__nav">
+            <div class="primary-navbar__menu flex">
+                <a href="" class="primary-navbar__link">
+                    Home
+                </a>
+                <a href="" class="primary-navbar__link">
+                    Works
+                </a>
+                <a href="" class="primary-navbar__link">
+                    About
+                </a>
+                <a href="" class="primary-navbar__link">
+                    Skills
+                </a>
+            </div>
+        </nav>
+        <div class="primary-navbar__contacts flex">
+            <span class="primary-navbar__contacts--text">
+                Contact me :
+            </span>
+            <a href="https://github.com/GuladiMeskhi" target="_blank">
+                <img src="./images/Github (1).svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/guladi-meskhi-6a29341a5/" target="_blank">
+                <img src="./images/linkedin (1) 1.svg" alt="">
+            </a>
+        </div>
+        <div class="menu-btn" id="burger-menu">
+            <div class="hamburger"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="hero-page container flex">
+        <div></div>
+        <div class="hero-page__main flex">
+            <span class="hero-page__presentation">
+                I’m Guladi Meskhi, <br> Front - End Developer
+            </span>
+            <span class="hero-page__visits">
+                This page was viewed <span id="visits">0</span> times
+            </span>
+            <div class="hero-page__contacts flex">
+                <span class="hero-page__contact-me">
+                    Contact me:
+                </span>
+                <div class="hero-page__icons flex">
+                    <a href="https://github.com/GuladiMeskhi" target="_blank" class="media-link">
+                        <img src="./images/Github (1).svg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/guladi-meskhi-6a29341a5/" target="_blank" class="media-link">
+                        <img src="./images/linkedin (1) 1.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/_ggmeskhi/" target="_blank" class="media-link">
+                        <img src="./images/Instagram (1).svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-page__animation container">
+            <div id="scroll-anim"></div>
+        </div>
+    </div>
+    <div class="work-page container-fluid flex bg-black">
+        <div class="work-page__content container flex">
+            <div class="work-page__featured container flex">
+                <h1 class="work-page__header">
+                    Featured works:
+                </h1>
+                <a href="https://github.com/GuladiMeskhi?tab=repositories" target="_blank" class="btn">View more on GitHub</a>
+            </div>
+            <div class="work-page__card container">
+                <div class="work-page__description">
+                    <h1 class="work-page__sub-header">
+                        Tic Tac Toe
+                    </h1>
+                    <p class="work-page__text"> 
+                        a game in which two players alternately put Xs and Os in compartments
+                        of a figure formed by two vertical lines crossing two horizontal 
+                        lines and each tries to get a row of three Xs or three Os 
+                        before the opponent does.
+                        <strong>Press on table to start</strong>
+                    </p>
+                    <div class="work-page__btns">
+                            <a href="#" class="btn--secondary">
+                                View source code
+                            </a>
+                        <button class="btn--reverse" onClick="startGame()">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            <div class="work-page__project">
+                <table>
+                    <tr>
+                        <td class="cell" id="0"></td>
+                        <td class="cell" id="1"></td>
+                        <td class="cell" id="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="3"></td>
+                        <td class="cell" id="4"></td>
+                        <td class="cell" id="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="6"></td>
+                        <td class="cell" id="7"></td>
+                        <td class="cell" id="8"></td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <div class="work-page__card container">
+                <div class="work-page__description">
+                    <h1 class="work-page__sub-header">
+                        Weather API
+                    </h1>
+                    <p class="work-page__text"> 
+                        I used Openweather and Geolocation APIs 
+                        to create simple weather application. 
+                        It detects your location in order to
+                         display accurate weather 
+                         information according to your area.
+                    </p>
+                    <div class="work-page__btns">
+                        <a href="#" class="btn--secondary">
+                            View source code
+                        </a>
+                    </div>
+                </div>
+            <div class="work-page__project" id="weather-api">
+                <div class="icon-city flex">
+                    <img src="./images/04d@2x.png" alt="" class="icons">
+                    <div class="location-date">
+                        <span class="location">
+                            Tbilisi, GE
+                        </span>
+                        <br>
+                        <span class="date">
+                            Friday, 24/05/2019
+                        </span>
+                    </div>
+                </div>
+                <div class="weather-info flex">
+                    <ul class="fd space">
+                        <li class="fx">
+                            <span class="iconify" data-icon="carbon:temperature-celsius" style="color: #151413;" data-width="16"></span>
+                             Temperature:
+                             <span class="temperature">00C</span>
+                        </li>
+                        <li class="fx">
+                            <span class="iconify" data-icon="carbon:temperature-feels-like" style="color: #151413;" data-width="16"></span>
+                            Feels like:
+                            <span class="feels-like">00C</span>
+                        </li>
+                        <li class="fx">
+                            <span class="iconify" data-icon="fluent:weather-cloudy-20-regular" style="color: #151413;" data-width="16"></span>
+                            Weather:
+                            <span class="weather">Clear</span>
+                        </li>
+                    </ul>
+                    <ul class="fd space">
+                        <li class="fx">
+                            <span class="iconify" data-icon="material-symbols:humidity-low" style="color: #151413;" data-width="16"></span>
+                            Humidity:
+                            <span class="humidity">00%</span>
+                        </li class="fx">
+                        <li class="fx">
+                            <span class="iconify" data-icon="ic:outline-visibility" style="color: #151413;" data-width="16"></span>
+                            Visibility:
+                            <span class="visibility">10 Km</span>
+                        </li>
+                        <li class="fx">
+                            <span class="iconify" data-icon="bi:wind" style="color: #151413;" data-width="16"></span>
+                            Wind speed:
+                            <span class="wind-speed">30 km/h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="work-page__card container">
+
+            </div>
+        </div>
+    </div>
+    <div class="about-me container">
+        <div class="about-me__description">
+            <h1 class="about-me__header">
+                A little bit about me
+            </h1>
+            <p class="about-me__text">
+                Hi, I am Guladi Meskhi, I started to study 
+                programming from Bitcamp course. On the 
+                first stage I understood concepts of 
+                basic programming fundamentals and after 
+                successfully passing it I continued my 
+                studies in the field of Front-End development 
+                Which consisted of Responsive Web Design, 
+                JavaScript Algorithms and Data Structures.
+                <br>
+                <br>
+                currently I'm Looking forward to apply for a 
+                position as an entry-level frontend developer
+                 with Company to use my skills in coding, 
+                 troubleshooting complex problems.
+            </p>
+            <a href="" class="btn--reverse">
+                Contact me
+            </a>
+        </div>
+        <div class="about-me__photo--container">
+            <img src="./images/unsplash_Pm_926lM-xI.png" alt="" class="actual-photo">
+        </div>
+    </div>
+    <div class="container-fluid bg-black">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <span class="iconify" data-icon="akar-icons:html-fill" style="color: white;" data-width="84"></span>
+                            <span class="skills__level">
+                                Basic
+                            </span>
+                            <p class="skills__card-txt">
+                                HTML, in full hypertext markup language, a 
+                                formatting system for displaying material 
+                                retrieved over the Internet. Each retrieval 
+                                unit is known as a Web page (from World Wide Web), 
+                                and such pages frequently contain hypertext
+                                links that allow related 
+                                pages to be retrieved.
+                            </p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <span class="iconify" data-icon="akar-icons:css-fill" style="color: white;" data-width="84"></span>
+                        <span class="skills__level">
+                            Basic
+                        </span>
+                        <p class="skills__card-txt">
+                            Cascading Style Sheets is a style sheet 
+                            language used for describing the presentation
+                            of a document written in a markup language 
+                            such as HTML. CSS is a cornerstone technology 
+                            of the World Wide Web, alongside 
+                            HTML and JavaScript.
+                        </p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <span class="iconify" data-icon="fa6-brands:node-js" style="color: white;" data-width="75"></span>
+                        <span class="skills__level">
+                            Basic
+                        </span>
+                        <p class="skills__card-txt">
+                            JavaScript often abbreviated JS, 
+                            is a programming language that is 
+                            one of the core technologies of the 
+                            World Wide Web, alongside HTML and CSS. 
+                            Over 97% of websites use JavaScript on 
+                            the client side for web page behavior. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.4/lottie.min.js" integrity="sha512-ilxj730331yM7NbrJAICVJcRmPFErDqQhXJcn+PLbkXdE031JJbcK87Wt4VbAK+YY6/67L+N8p7KdzGoaRjsTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+    <script src="./lib/moment/moment.min.js"></script>
+</body>
+</html>
