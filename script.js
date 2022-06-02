@@ -248,3 +248,18 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+  /* Scroll to div */
+  document.getElementById('home').addEventListener('click', () => {
+	  document.querySelector('.hero-page').scrollIntoView({behavior:'smooth'})
+  })
+  document.getElementById('works').addEventListener('click', () => {
+	document.querySelector('.work-page').scrollIntoView({behavior:'smooth'})
+	})
+  document.getElementById('about').addEventListener('click', () => {
+	document.querySelector('.about-me').scrollIntoView({behavior:'smooth'})
+	})
+  document.getElementById('skills').addEventListener('click', () => {
+	document.querySelector('.slide-content').scrollIntoView({behavior:'smooth'})
+	})
+ 
